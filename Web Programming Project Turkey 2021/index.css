@@ -1,0 +1,548 @@
+*{
+    box-sizing: border-box;
+}
+body, html{
+    height: 100%;
+    width: 100%;
+    margin:0%;
+    padding:0%;
+}
+#pozadina{
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    filter:blur(2px);
+    position: fixed;
+}
+#sve{
+    height: max-content;
+    width: 100%;
+    padding: 5% 10% 5% 10%;
+ 
+}
+#up{
+    height: 70px;
+    width: 100%;
+    border:1px solid lightblue;
+    padding-right: 30px;
+    padding-left: 15px;
+    background-color: rgb(194, 232, 245);
+}
+#middle{
+    height: fit-content;
+    width: 100%;
+    padding: 50px;
+}
+#bottom{
+    height: 200px;
+    width: 100%;
+    padding:50px;
+}
+#logos-container{
+    border:2px solid lightblue;
+    padding: 20px;
+    width: 100%;
+}
+.logos{
+    height: auto;
+    width: 8%;
+    margin-right: 4%;
+    margin-left: 4%;
+    display: inline-block;
+}
+h2{
+    margin-left:100px;
+    width: 300px;
+    letter-spacing: 3px;
+    font-style: italic;
+    float: left;
+}
+#up img{
+    height: 100%;
+    width: auto;
+    position: static;
+    filter: blur(0px);
+    float:left;
+}
+#up div img{
+    height: 20px;
+    width: 20px;
+}
+#dugme{
+    background-color: rgb(154, 203, 219);
+    color: white;
+    width: 160px;
+    height: 40px;
+    margin-top: 15px;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 2px;
+    float:right;
+    margin-left: 15px;
+}
+#dugme:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+.dropbtn{
+    background-color: rgb(154, 203, 219);
+    color: white;
+    width: 160px;
+    height: 40px;
+    margin-top:15px;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding:12.5px 0px 12.5px 10px;
+ 
+}
+.dropdown{
+    float:right;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgb(188, 223, 235);
+    max-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid rgb(143, 177, 189);
+    letter-spacing: 1px;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: lightblue(197, 197, 74);}
+
+.lista{
+    background-color: lightblue(197, 197, 74);
+    border: none;
+    width:100%;
+}
+.lista a{
+    background-color: lightblue(197, 197, 74);
+    text-align: left;
+}
+.modal{
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+.modal-content{
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+.close{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close2{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close2:hover, .close2:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.slideshow-container{
+    max-width: 75%;
+    position: relative;
+    margin: auto;
+}
+.mySlides{
+    display: none;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+    background-color: #717171;
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1}
+}
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+#podaci p{
+    padding-left: 200px;
+    font-style: italic;
+    margin-top: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+#prva, #druga, #treca, #cetvrta{
+    border: 2px lightblue solid;
+    padding:5px;
+}
+.slideshow-container2{
+    max-width: 75%;
+    position: relative;
+    margin: auto;
+}
+.mySlides2{
+    display: none;
+}
+.prev2, .next2{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next2{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev2:hover, .next2:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.numbertext2{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot2{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+    background-color: #717171;
+}
+.fade2{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade2{
+    from{opacity: .4}
+    to{opacity: 1}
+}
+@keyframes fade2{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.slideshow-container3{
+    max-width: 75%;
+    position: relative;
+    margin: auto;
+}
+.mySlides3{
+    display: none;
+}
+.prev3, .next3{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next3{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev3:hover, .next3:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.numbertext3{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot3{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+    background-color: #717171;
+}
+.fade3{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade3{
+    from{opacity: .4}
+    to{opacity: 1}
+}
+@keyframes fade3{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.slideshow-container4{
+    max-width: 75%;
+    position: relative;
+    margin: auto;
+}
+.mySlides4{
+    display: none;
+}
+.prev4, .next4{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next4{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev4:hover, .next4:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.numbertext4{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot4{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+    background-color: #717171;
+}
+.fade4{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade4{
+    from{opacity: .4}
+    to{opacity: 1}
+}
+@keyframes fade4{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  button4 {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button4:hover {
+    opacity: 0.8;
+  }
+ 
+  .cancelbtn4 {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  .imgcontainer4 {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar4 {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .container4 {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+
+  .modal4 {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+  }
+
+  .modal-content4 {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 80%; 
+  }
+
+  .close4 {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close4:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+
+  .animate4 {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+
+ @media screen and (max-width: 300px) {
+span.psw {
+       display: block;
+       float: none;
+}
+.cancelbtn{
+    width: 100%;
+}
+}

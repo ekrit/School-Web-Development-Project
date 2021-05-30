@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type = "text/javascript " src= "eksterni.js"> </script>
+        
+        <title>
+            Rent-A-Car       
+        </title>
+        <link rel="icon" href="vroum_vroum.ico"/>     
+        
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body> 
+
+        <img id="pozadina" src="background.jfif" alt="">
+
+        <div id="sve">
+
+            <div id="up">
+                <img src="icons8-car-100.png" alt="">
+                <h2>Rent-A-Car</h2>
+                
+                <button id="dugme" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+                <div class="dropdown">
+                    
+                    <button class="dropbtn">Menu</button>
+
+                    <div class="dropdown-content">
+                    <button id="myBtn" class="lista"> <a href="#">O nama</a></button>
+                    <button id="myBtn2" class="lista"> <a href="#">Kontakt</a></button>
+                    <button class="lista">
+                        <a href="https://www.facebook.com/rent.car.507679">Facebook</a>
+                    </button>
+                    </div>
+                  </div>
+            </div>
+            
+            <div id="middle">
+                <div id="prva" class="unutrasnjaslika">
+
+                        <div class="slideshow-container">
+                    
+                        <div class="mySlides fade">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="auto1/mercedes-benz-e-class-2020-580193.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides fade">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="auto1/mercedes-benz-e-class-2020-580194.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="auto1/mercedes-benz-e-class-2020-580196.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="auto1/mercedes-benz-e-class-2020-580210.jpg" style="width:100%">
+                        </div>
+                    
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br>
+                    
+                    
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                
+                    <span id="podaci">
+                        <p> Cijena: 40€/dan</p>
+                        <p> Godina proizvodnje: 2019.</p>
+                        <p> Pređenih kilometara: 30.000</p>
+                        <p> Snaga motora: 120kW</p>
+                    </span>
+                </div>
+                <div id="druga">
+                    <div class="slideshow-container2">
+                    
+                        <div class="mySlides2 fade2">
+                        <div class="numbertext2">1 / 4</div>
+                        <img src="auto2/land-rover-range-rover-sport-hse-2021-591920.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides2 fade2">
+                        <div class="numbertext2">2 / 4</div>
+                        <img src="auto2/land-rover-range-rover-sport-hse-2021-591924.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides2 fade2">
+                        <div class="numbertext2">3 / 4</div>
+                        <img src="auto2/land-rover-range-rover-sport-hse-2021-591928.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides2 fade2">
+                            <div class="numbertext2">4 / 4</div>
+                            <img src="auto2/land-rover-range-rover-sport-hse-2021-591930.jpg" style="width:100%">
+                        </div>
+                    
+                        <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+                        <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+                        </div>
+                        <br>
+                    
+                    
+                    <div style="text-align:center">
+                        <span class="dot2" onclick="currentSlide(1)"></span>
+                        <span class="dot2" onclick="currentSlide(2)"></span>
+                        <span class="dot2" onclick="currentSlide(3)"></span>
+                        <span class="dot2" onclick="currentSlide(4)"></span>
+                    </div>
+                
+                    <span id="podaci">
+                        <p> Cijena: 60€/dan</p>
+                        <p> Godina proizvodnje: 2014.</p>
+                        <p> Pređenih kilometara: 76.000</p>
+                        <p> Snaga motora: 150kW</p>
+                    </span>
+                </div>
+                <div id="treca">
+                    <div class="slideshow-container3">
+                    
+                        <div class="mySlides3 fade3">
+                        <div class="numbertext3">1 / 4</div>
+                        <img src="auto3/volkswagen-sharan-2015-429683.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides3 fade3">
+                        <div class="numbertext3">2 / 4</div>
+                        <img src="auto3/volkswagen-sharan-2015-429690.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides3 fade3">
+                        <div class="numbertext3">3 / 4</div>
+                        <img src="auto3/volkswagen-sharan-2015-429694.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides3 fade3">
+                            <div class="numbertext3">4 / 4</div>
+                            <img src="auto3/volkswagen-sharan-2015-429701.jpg" style="width:100%">
+                        </div>
+                    
+                        <a class="prev3" onclick="plusSlides3(-1)">&#10094;</a>
+                        <a class="next3" onclick="plusSlides3(1)">&#10095;</a>
+                        </div>
+                        <br>
+                    
+                    
+                    <div style="text-align:center">
+                        <span class="dot3" onclick="currentSlide(1)"></span>
+                        <span class="dot3" onclick="currentSlide(2)"></span>
+                        <span class="dot3" onclick="currentSlide(3)"></span>
+                        <span class="dot3" onclick="currentSlide(4)"></span>
+                    </div>
+                
+                    <span id="podaci">
+                        <p> Cijena: 25€/dan</p>
+                        <p> Godina proizvodnje: 2016.</p>
+                        <p> Pređenih kilometara: 45.000</p>
+                        <p> Snaga motora: 70kW</p>
+                    </span>
+                </div>
+                <div id="cetvrta">
+                    <div class="slideshow-container4">
+                    
+                        <div class="mySlides4 fade4">
+                        <div class="numbertext4">1 / 4</div>
+                        <img src="auto4/porsche-911-992-turbo-2020-591936.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides4 fade4">
+                        <div class="numbertext4">2 / 4</div>
+                        <img src="auto4/porsche-911-992-turbo-2020-591939.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides4 fade4">
+                        <div class="numbertext4">3 / 4</div>
+                        <img src="auto4/porsche-911-992-turbo-2020-591943.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides4 fade4">
+                            <div class="numbertext4">4 / 4</div>
+                            <img src="auto4/porsche-911-992-turbo-2020-591947.jpg" style="width:100%">
+                        </div>
+                    
+                        <a class="prev4" onclick="plusSlides4(-1)">&#10094;</a>
+                        <a class="next4" onclick="plusSlides4(1)">&#10095;</a>
+                        </div>
+                        <br>
+                    
+                    
+                    <div style="text-align:center">
+                        <span class="dot4" onclick="currentSlide(1)"></span>
+                        <span class="dot4" onclick="currentSlide(2)"></span>
+                        <span class="dot4" onclick="currentSlide(3)"></span>
+                        <span class="dot4" onclick="currentSlide(4)"></span>
+                    </div>
+                
+                    <span id="podaci">
+                        <p> Cijena: 50€/dan</p>
+                        <p> Godina proizvodnje: 2018.</p>
+                        <p> Pređenih kilometara: 20.000</p>
+                        <p> Snaga motora: 150kW</p>
+                    </span>
+                </div>
+            </div>
+
+            <div id="bottom">
+                <div id="logos-container">
+                    <img class="logos" src="logos/bmw.png">
+                    <img class="logos" src="logos/ford.png">
+                    <img class="logos" src="logos/land rover.png">
+                    <img class="logos" src="logos/mercedes.png">
+                    <img class="logos" src="logos/porsche.png">
+                    <img class="logos" src="logos/vw.png">
+                </div>
+            </div>
+           
+        </div>
+            <div id="myModal" class="modal">
+
+                        <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h1>About US</h1>
+                        <br>
+                        <hr>
+                        <p>Rent-A-Car udruženje je osnovano 1974. godine. Naš osnivač, Niko Neznanović, je osnovao ovu kompaniju sa ciljem unapređenja turizma u istočnoj Hercegovini. U toku rata je ova kompanija prestala sa radom iz već očiglednih razloga. Niko je preminuo ubrzo nakon rata te nije uspio dočekati ponovo otvaranje ove kompanije. Njegov sin Damir je ponovno otvorioi unaprijedio kompaniju zahvaljujući financijskim prihodima od turizma. </p>
+                        <p>Danas imamo poslovnice širom Bosne i Hercegovine ali i državama regije, zahvaljujući uspješnom rukovodstvu koje je naslijedilo Niku Neznanovića.</p>
+                        <hr>
+                        </div>
+                    
+                    </div>
+        
+
+        <div id="myModal2" class="modal">
+
+            <div class="modal-content">
+              <span class="close2">&times;</span>
+              <h1>Contact</h1>
+              <br>
+              <hr>  
+              <p>Kontant telefon: +38763 819 726</p>
+              <p>email: carrentbosnia@gmail.com</p>
+              <p>Ulica: Ulica Zmaja od Bosne 27, 88000 Mostar</p>
+              <p>Hercegovačko-Neretvanski kanton</p>
+              <p>Federacija Bosne i Hercegovine</p>
+              <p>Bosna i Hercegovina</p>
+            <hr>
+            </div>
+          
+        </div>
+
+        <script>
+            var modal = document.getElementById("myModal");
+            
+            var btn = document.getElementById("myBtn");
+            
+            var span = document.getElementsByClassName("close")[0];
+            
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+            
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+        </script>
+
+        <script>
+            var modal2 = document.getElementById("myModal2");
+            
+            var btn2 = document.getElementById("myBtn2");
+            
+            var span2 = document.getElementsByClassName("close2")[0];
+            
+            btn2.onclick = function() {
+              modal2.style.display = "block";
+            }
+            span2.onclick = function() {
+              modal2.style.display = "none";
+            }
+        </script>
+
+<div id="id01" class="modal4">
+  
+    <form class="modal-content4 animate4" action="/action_page.php" method="post">
+
+      <div class="container4">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container4" style="background-color:#f1f1f1">
+        <button type="button4" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        
+      </div>
+    </form>
+  </div>
+  
+  <script>
+    var modal4 = document.getElementById('id01');
+    
+    window.onclick = function(event) {
+        if (event.target == modal4) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+<script>
+    var slideIndex2 = 1;
+    showSlides2(slideIndex2);
+    
+    function plusSlides2(n) {
+      showSlides2(slideIndex2 += n);
+    }
+    
+    function currentSlide2(n) {
+      showSlides2(slideIndex2 = n);
+    }
+    
+    function showSlides2(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides2");
+      var dots = document.getElementsByClassName("dot2");
+      if (n > slides.length) {slideIndex2 = 1}    
+      if (n < 1) {slideIndex2 = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex2-1].style.display = "block";  
+      dots[slideIndex2-1].className += " active";
+    }
+    </script>
+
+<script>
+    var slideIndex = 1;
+    showSlides3(slideIndex);
+    
+    function plusSlides3(n) {
+      showSlides3(slideIndex += n);
+    }
+    
+    function currentSlide3(n) {
+      showSlides3(slideIndex = n);
+    }
+    
+    function showSlides3(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides3");
+      var dots = document.getElementsByClassName("dot3");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+<script>
+    var slideIndex = 1;
+    showSlides4(slideIndex);
+    
+    function plusSlides4(n) {
+      showSlides4(slideIndex += n);
+    }
+    
+    function currentSlide4(n) {
+      showSlides4(slideIndex = n);
+    }
+    
+    function showSlides4(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides4");
+      var dots = document.getElementsByClassName("dot4");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+    </body>
+</html>
